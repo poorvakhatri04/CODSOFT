@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class atm {
+class atm {
     private bank account;
     public atm(bank account){
         this.account=account;
@@ -13,10 +13,33 @@ public class atm {
             System.out.println("3. Withdraw");
             System.out.println("4. Exit");
             System.out.println("Enter your choice:");
-            int choice=sc.nextInt():
+            int choice=sc.nextInt();
             switch(choice){
-                case 1: 
+                case 1: checkBal();
+                        break;
+                case 2: System.out.print("Enter amount to deposit: ");
+                        double dep=sc.nextDouble();
+                        deposit(dep);
+                        break;
+                case 3:System.out.print("Enter amount to withdraw: ");
+                        double wit=sc.nextDouble();
+                        withdraw(wit);
+                        break;
+                case 4: System.out.println("Thank you for using the ATM. Goodbye!");
+                        sc.close();
+                        return;
+                default:
+                        System.out.println("Invalid option. Try again!");
             }
-        }
+        }while(true);
+    }
+    private void checkBal(){
+        System.out.println("Your current balance is: "+account.getBalance());
+    }
+    private void deposit(double amount){
+        account.deposit(amount);
+    }
+    private void withdraw(double amount){
+        account.withdraw(amount);
     }
 }

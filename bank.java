@@ -1,4 +1,4 @@
-public class bank{
+class bank{
     private double balance;
     public bank(double balance){
         this.balance=balance;
