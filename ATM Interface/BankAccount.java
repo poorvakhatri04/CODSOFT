@@ -1,6 +1,6 @@
-class bank{
+class BankAccount{
     private double balance;
-    public bank(double balance){
+    public BankAccount(double balance){
         this.balance=balance;
     }
     public double getBalance(){

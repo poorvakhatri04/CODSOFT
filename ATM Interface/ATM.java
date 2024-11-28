@@ -1,7 +1,7 @@
 import java.util.Scanner;
-class atm {
-    private bank account;
-    public atm(bank account){
+class ATM {
+    private BankAccount account;
+    public ATM(BankAccount account){
         this.account=account;
     }
     public void initialise(){
