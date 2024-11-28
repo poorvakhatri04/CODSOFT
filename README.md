@@ -1,6 +1,6 @@
 In this repository, you will find 5 folders having all the 5 tasks which was assigned in Java development internship.
 
-1st task was creating the number game, it is in the folder named nmber game. I have used Java Swing for completing that task.
+1st task was creating the number game, it is in the folder named nmber game.
 
 2nd task was creating student grade calculator, and I have created it console-based.
 
